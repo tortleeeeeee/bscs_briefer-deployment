@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media only screen and (min-width: 768px) {
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: auto;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-image: url('../IMAGES/Faculty\ Images/cos2.png');
+    background-size: cover;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+
+.ref-faculty{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .newLayout-faculty{
+    width: 40%;
+    float: left;
+    position: relative;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    background-color:black;
+  }
+  .rightpanel-faculty{
+    width: 60%;
+    float: right;
+    margin-right: 0px; 
+    overflow: auto;
+    position: relative;  
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    background-color: transparent;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#faculty{
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    max-width: 100%;
+}
+
+.wrapper h1{
+  font-size: 50px;
+  color: #BFD7ED;
+  text-shadow: 5px 2px 2px #0C4160;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: animate 1s ease-in-out 1 forwards;
+  text-align: center;
+}
+
+.wrapper h2{
+  font-style: italic;
+  text-shadow: 5px 2px 2px #0C4160;
+  color: #eee;
+  font-weight: bold;
+  font-size: 30px;
+  animation: animate 1s ease-in-out 0.3s 1 forwards;
+  text-align: center;
+}
+
+.fade-in-image { animation: fadeIn 3ms; }
+
+
+
+  h3{ 
+    margin: 0; 
+    padding: 0; 
+    width: -350px;
+  }
+
+  h3{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    position: relative;
+  }
+  h3:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: transparent;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  h3:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+.wrapper br{
+    font-size: 10px;
+}
+
+.button-x{
+  display:flex;
+  position: relative;
+  float: right;
+  top: 5px;
+  z-index: 9999;
+  right:20px;
+}
+
+.adviser{
+    display:flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.officers1{
+    display:flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.officers2{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.officers3{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.officers4{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.officers5{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.officers6{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.officers7{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.officers_member{
+    margin: 10px;
+    margin-bottom: 70px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #38491d;
+    position: relative;
+}
+
+.officers_member h3{
+    color: #fffce1;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.officers_member p.role{
+    font-weight: bolder;
+    color: #ffcc25;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.officers_member .officers_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -90px;
+    Left: 37.5%;
+    transform: translateX(-50px);
+    
+    
+}
+
+.officers_member .officers_img img{
+    width: 170px;
+    height: 155px;
+    
+    border-radius: 50%;
+    border: #bd7b00 inset 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 30), 0 3px 16px rgba(10, 0, 0, 403);
+    
+     
+}
+
+#initialLayout-faculty{
+    height: 870px;
+    padding-top: 150px;
+    margin-top: 0px;
+    position: relative;
+    overflow-y: scroll;
+    background-color: rgba(1, 13, 70, .8);
+}
+
+
+button {
+    border-color: transparent;
+    background: transparent;
+    box-sizing: 30px;
+    border-radius: 10px;
+}
+
+/*DEETS-FACULTY*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: auto;
+  }
+  
+  .img-officers {
+    margin-top: 50px;
+    max-width: 60%;
+    max-height:60%;
+  }
+  
+  .text {
+    font-family: "Inria Serif", serif;
+    font-size: 130%;
+    color: #fffce1;
+    font-style: bold;
+    margin-top: 3%;
+    
+  }
+
+  .education{
+    font-family: 'Times New Roman';
+    font-size: 100%;
+    color: #ffcc25;
+    font-style: bold;
+    margin-left: 0%;
+  }
+
+  .educ_content{
+      
+      left: 100%;
+      transition: left 0.5s cubic-bezier(.25,0.1,.25,1);
+    
+    text-align: justify;
+    font-family: "Times New Roman";
+    font-size: 120%;
+    font-style: bold;
+    color: #fffce1;
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 18%;
+    margin-bottom: 5%;
+
+
+  animation: grow 1s;
+  -webkit-animation: grow 1s;
+  -moz-animation: grow 1s;
+  -o-animation: grow 1s;
+  -ms-animation: grow 1s;
+}
+
+@keyframes grow {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes grow {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes grow {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes grow {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes grow {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+
+}

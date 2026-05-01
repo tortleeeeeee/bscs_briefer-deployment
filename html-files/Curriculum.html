@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Curriculum.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Curri-FirstYearSS.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Curri-SecYearFS.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Curri-SecYearSS.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Curri-ThirdYearFS.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Curri-ThirdYearSS.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Curri-FourthYearFS.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Curri-FourthYearSS.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Navigation.css'>
+
+    <style>
+      .wrapper{
+        max-width: 100%;
+        background-color: #162F65;
+        top:0px;
+      }
+
+      .wrapper h1{
+        font-size: 30px;
+        color: #BFD7ED;
+        text-shadow: 5px 2px 2px #0C4160;
+        text-transform: uppercase;
+        font-weight: bold;
+        animation: animate 1s ease-in-out 1 forwards;
+        text-align: center;
+        padding-top:1%;
+      }
+
+      .wrapper h2{
+        font-style: italic;
+        text-shadow: 5px 2px 2px #0C4160;
+        color: #eee;
+        font-weight: bold;
+        font-size: 30px;
+        animation: animate 1s ease-in-out 0.3s 1 forwards;
+        text-align: center;
+      }
+      .wrapper{
+        max-width: 100%;
+      }
+    </style>
+    <title>BSCS BRIEFER | CURRICULUM </title>
+</head>
+<body>
+    
+    <!--HEADING-->
+    <div class="header">
+        <table>
+          <tr>
+            <td rowspan="2" style="border-right: 3px solid #304673; padding-right: 10px;">
+              <img class="image" src = "../IMAGES/Header Images/urs.png"/> 
+              <img class = "image2" src = "../IMAGES/Header Images/ursgiants.png"/> 
+              <img class ="image2"src = "../IMAGES/Header Images/TIPA.png"/>
+          </td>
+            <td class="title"> UNIVERSITY OF RIZAL SYSTEM MORONG CAMPUS</td>
+          </tr>
+          <tr>
+            <td class="title2">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</td>
+          </tr>
+        </table>
+      </div>
+
+    <!--NAVIGATION BAR-->
+    <div class="sidebar" style="font-family: Garamond;">
+        
+        <div class="logo_details">
+          <!--<i class="bx bxl-audible icon"></i>
+          <div class="logo_name">Code</div>-->
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+          
+          <li>
+                <a href="../html-files/news-events.html">
+                  <i><img src="../IMAGES/Navigation Images/News&Events.png" style="width:35px; height:auto;" alt=""></i>
+                  <span class="link_name">News&Events</span>
+                </a>
+                <span class="tooltip">News&Events</span>
+              </li>
+          <li>
+            <a href="../html-files/Faculty.html">
+              <i><img src="../IMAGES/Navigation Images/Faculty.PNG" style="width:35px; height:auto;" alt=""></i>
+              <span class="link_name">Faculty</span>
+            </a>
+            <span class="tooltip">Faculty</span>
+          </li>
+          <li>
+            <a href="../html-files/Curriculum.html">
+              <i><img src="../IMAGES/Navigation Images/Curriculum.PNG" style="width:35px; height:auto;" alt=""></i>
+              <span class="link_name">Curriculum</span>
+            </a>
+            <span class="tooltip">Curriculum</span>
+          </li>
+          <li>
+            <a href="../FACILITIES/Facilities.html">
+              <i><img src="../IMAGES/Navigation Images/Facilities.PNG" style="width:35px; height:auto;" alt=""></i>
+              <span class="link_name">Facilities</span>
+            </a>
+            <span class="tooltip">Facilities</span>
+          </li>
+          <li>
+            <a href="../html-files/Officers.html">
+              <i><img src="../IMAGES/Navigation Images/Organization.PNG"/ style="width:35px; height:auto;" alt=""></i>
+              <span class="link_name">Organization</span>
+            </a>
+            <span class="tooltip">Organization</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Scripts -->
+      <script src="../JAVASCRIPT FILES/Navigation.js"></script>
+
+    <main style="max-width: 100%;">
+
+      <div class="wrapper" style="position: fixed; width: 100%; z-index: 9996; top: 6%;">
+        <hr style="color: white;"></hr>
+        <h1>BSCS APPROVED CURRICULUM | College of Science</h1>
+        <hr style="color: white;"></hr>
+        </div>
+
+        <!--CURRICULUM-->
+        <section id="curriculum">
+
+            <!--LEFT SECTION-->
+        <div class="left">
+        <!--1st Year Button-->
+        <div class="dropdown">
+          <button> 
+            <a class="dropbtn"><b>FIRST YEAR</b></a>
+          </button>
+        
+          <div class="dropdown-content">
+              <a onclick="displaySem1First()" style="border-bottom: 1px solid #162F65;"><b>First Semester</b></a>
+              <a onclick="displaySem2First()"><b>Second Semester</b></a>
+          </div>
+        </div>
+        
+
+        <!--2nd Year Button-->
+        <div class="dropdown">
+          <button> 
+              <a class="dropbtn"><b>SECOND YEAR</b></a>
+          </button>
+
+          <div class="dropdown-content">
+              <a onclick="displaySem1Second()" style="border-bottom: 1px solid #162F65;"><b>First Semester</b></a>
+              <a onclick="displaySem2Second()"><b>Second Semester</b></a>
+          </div>
+        </div>
+
+        <!--3rd Year Button-->
+        <div class="dropdown">
+          <button> 
+              <a class="dropbtn"><b>THIRD YEAR</b></a>
+          </button>
+          
+          <div class="dropdown-content">
+              <a onclick="displaySem1Third()" style="border-bottom: 1px solid #162F65;"><b>First Semester</b></a>
+              <a onclick="displaySem2Third()"><b>Second Semester</b></a>
+          </div>
+        </div>
+
+        <!--4th Year Button-->
+        <div class="dropdown">
+          <button> 
+              <a class="dropbtn"><b>FOURTH YEAR</b></a>
+          </button>
+          
+          <div class="dropdown-content">
+              <a onclick="displaySem1Fourth()" style="border-bottom: 1px solid #162F65;"><b>First Semester</b></a>
+              <a onclick="displaySem2Fourth()"><b>Second Semester</b></a>
+          </div>
+        </div>
+        </div>
+
+      <!--RIGHT SECTION-->
+      <div class="right" >
+        <!--FIRST YEAR-->
+        <!--FIRST SEM SUBJECT-->
+        <div class="slideshow-container">
+        <div id="firstsem-firstyear" style="display: inline;">
+          <h1>1ST YEAR | FIRST SEMESTER</h1>
+
+          <div class="mySlides fade">
+            <!--1ST SEM SUBJECT-->
+            <div class="container1" style="padding-bottom: 25px; padding-top: 10px;">
+              <a href="#s1"><p class="psubject1">Understanding the Self</p></a>
+              <a href="#s2"><p class="psubject1">Mathematics in the Modern World</p></a>
+              <a href="#s3"><p class="psubject1">Purposive Communication</p></a>
+              <a href="#s4"><p class="psubject1">Environmental Science</p></a>
+              <a href="#s5"><p class="psubject1">Introduction to Computing</p></a>
+              <a href="#s6"><p class="psubject1">Computer Programming 1</p></a>
+              <a href="#s7"><p class="psubject1">Physical Fitness</p></a>
+              <a href="#s8"><p class="psubject1">National Service Training Program</p></a>
+            </div>
+          </div>
+
+          <div class="mySlides fade" >
+            <!--SELF 1-->
+            <div class="container1" style="padding-bottom: 20px;">
+              <h2>Understanding the Self</h2>
+              <h3>SELF 1</h3>
+                <p class = "psubject2">Explores the complexities of self-awareness and personal growth, delving into psychological and philosophical perspectives.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <!--MATH 1-->
+            <div class="container1" id="s2" style="padding-bottom: 20px;">
+              <h2>Mathematics in the Modern World</h2>
+              <h3>MATH 1</h3>
+                <p class = "psubject2">Explores the complexities of self-awareness and personal growth, delving into psychological and philosophical perspectives.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <!--ENG 1-->
+            <div class="container1" id="s3" style="padding-bottom: 20px;">
+              <h2>Purposive Communication</h2>
+              <h3>ENG 1</h3>
+                <p class = "psubject2">Enhances communication skills for various contexts, emphasizing clarity, coherence, and effectiveness.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <!--ELECTIVE 1-->
+            <div class="container1" id="s4" style="padding-bottom: 20px;">
+              <h2>Environmental Science</h2>
+              <h3>ELECTIVE 1</h3>
+                <p class = "psubject2">Explores the complexities of self-awareness and personal growth, delving into psychological and philosophical perspectives.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <!--ITE 3-->
+            <div class="container1" id="s5" style="padding-bottom: 20px;">
+              <h2>Introduction to Computing</h2>
+              <h3>ITE 3</h3>
+                <p class = "psubject2">Provides foundational knowledge of computing principles, algorithms, and data structures essential for understanding modern technology.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <!--ITE 4-->
+            <div class="container1" id="s6" style="padding-bottom: 20px;">
+              <h2>Computer Programming 1</h2>
+              <h3>ITE 4</h3>
+                <p class = "psubject2">Introduces fundamental concepts of programming languages and software development, focusing on problem-solving and algorithmic thinking.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <!--PE 1-->
+            <div class="container1" id="s7" style="padding-bottom: 20px;">
+              <h2>Physical Fitness</h2>
+              <h3>PE 1</h3>
+                <p class = "psubject2">Promotes physical well-being through structured exercises and activities aimed at improving cardiovascular health, strength, and flexibility</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">2</td>
+                    <td class="tdcur">2</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <!--NSTP 1-->
+            <div class="container1" id="s8" style="padding-bottom: 20px;">
+              <h2>National Service Training Program</h2>
+              <h3>NSTP 1</h3>
+                <p class = "psubject2">Engages students in community service and civic activities, fostering social responsibility and leadership skills.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">2</td>
+                    <td class="tdcur">2</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <!--
+          <a class="prev" onclick="plusSlides(-0)">❮</a> 
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          -->
+
+          <div style="text-align:center; margin-top: 40px;">
+            <span class="dot active" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>  
+          </div>
+
+          <script src="../JAVASCRIPT FILES/Curriculum.js"></script>
+
+        </div>
+        </div>
+        
+        <!--FIRST YEAR-->
+        <!--SECOND SEM SUBJECT-->
+        <div class="slideshow-container">
+        <div id="secondsem-firstyear" style="display: none;">
+          <h1>1ST YEAR | SECOND SEMESTER</h1>
+
+          <div class="mySlides1 fade"> 
+            <div class="container2" style="padding-bottom: 25px; padding-top: 10px;">
+              <a href="#"><p class="psubject1">Science, Technology and Society</p></a>
+              <a href="#"><p class="psubject1">Art Appreciation</p></a>
+              <a href="#"><p class="psubject1">Gender and Society</p></a>
+              <a href="#"><p class="psubject1">General Physics</p></a>
+              <a href="#"><p class="psubject1">Computer Programming 2</p></a>
+              <a href="#"><p class="psubject1">Discrete Structures 1</p></a>
+              <a href="#"><p class="psubject1">Rhythmic Activities</p></a>
+              <a href="#"><p class="psubject1">National Service Training Program</p></a>
+            </div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <!--STS-->
+            <div class="container2" style="padding-bottom: 20px;">
+              <h2>Science, Technology and Society</h2>
+              <h3>STS</h3>
+                <p class = "psubject2">Examines the reciprocal relationships between science, technology, and society, exploring ethical, cultural, and environmental implications.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <!--HUM 1-->
+            <div class="container2" style="padding-bottom: 20px;">
+              <h2>Art Appreciation</h2>
+              <h3>HUM 1</h3>
+                <p class = "psubject2">Cultivates an understanding and appreciation of various art forms, exploring their historical, cultural, and aesthetic significance.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <!--ELECTIVE 2-->
+            <div class="container2" style="padding-bottom: 20px;">
+              <h2>Gender and Society </h2>
+              <h3>ELECTIVE 2</h3>
+                <p class = "psubject2">Analyzes the role of gender in shaping social structures, identities, and power dynamics, fostering critical awareness and promoting gender equality.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <!--MATH ELEC 1-->
+            <div class="container2" style="padding-bottom: 20px;">
+              <h2>General Physics</h2>
+              <h3>MATH ELEC 1</h3>
+                <p class = "psubject2">Applies mathematical principles to the study of natural phenomena, providing a foundation for understanding the physical world.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <!--ITE 5-->
+            <div class="container2" style="padding-bottom: 20px;">
+              <h2>Computer Programming 2</h2>
+              <h3>ITE 5</h3>
+                <p class = "psubject2">Builds upon programming fundamentals, focusing on advanced algorithms, data structures, and software development methodologies.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur">ITE 4</td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <!--CS 1-->
+            <div class="container2" style="padding-bottom: 20px;">
+              <h2>Discrete Structures 1 </h2>
+              <h3>CS 1 </h3>
+                <p class = "psubject2">Introduces mathematical structures fundamental to computer science, providing a basis for analyzing algorithms and systems.</p>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <!--PE 2-->
+            <div class="container2" style="padding-bottom: 20px;">
+              <h2>Rhythmic Activities</h2>
+              <h3>PE 1</h3>
+                <p class = "psubject2">Engages students in rhythmic exercises and dance forms to improve coordination, rhythm, and overall physical fitness.</p>
+        
+                <br>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">2</td>
+                    <td class="tdcur">2</td>
+                    <td class="tdcur">PE 1</td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <!--NSTP 2-->
+            <div class="container2" style="padding-bottom: 20px;">
+              <h2>National Service Training Program</h2>
+              <h3>NSTP 1</h3>
+                <p class = "psubject2">Surveys key events, movements, and figures in Philippine history, fostering a deeper understanding of national identity and heritage.</p>
+        
+                <br>
+        
+                <table class="tablecur">
+                  <tr>
+                    <th class="thcur">Hours / <br>Work</th>
+                    <th class="thcur">Number of <br>Units</th>
+                    <th class="thcur">Prerequisite / <br>Corequisite</th>
+                  </tr>
+                          
+                  <tr>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur">3</td>
+                    <td class="tdcur">NSTP 1</td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <!--
+          <a class="prev1" onclick="plusSlides1(-0)">❮</a>
+          <a class="next1" onclick="plusSlides1(1)">❯</a>
+          -->
+
+          <div style="text-align:center; margin-top: 40px;">
+            <span class="dot1" onclick="currentSlide1(1)"></span> 
+            <span class="dot1" onclick="currentSlide1(2)"></span> 
+            <span class="dot1" onclick="currentSlide1(3)"></span> 
+            <span class="dot1" onclick="currentSlide1(4)"></span> 
+            <span class="dot1" onclick="currentSlide1(5)"></span> 
+            <span class="dot1" onclick="currentSlide1(6)"></span> 
+            <span class="dot1" onclick="currentSlide1(7)"></span> 
+            <span class="dot1" onclick="currentSlide1(8)"></span>
+            <span class="dot1" onclick="currentSlide1(9)"></span>  
+          </div>
+
+          <script src="../JAVASCRIPT FILES/Curri-FirstYearSS.js"></script>
+        </div>
+        </div>
+
+        <!--SECOND YEAR-->
+        <!--FIRST SEM SUBJECT-->
+        <div class="slideshow-container">
+          <div id="firstsem-secondyear" style="display: none;">
+            <h1>2ND YEAR | FIRST SEMESTER</h1>
+      
+            <div class="mySlides2 fade"> 
+              <div class="container2" style="padding-bottom: 25px; padding-top: 10px;">
+                <a href="#"><p class="psubject1">Readings in Philippine History</p></a>
+                <a href="#"><p class="psubject1">The Contemporary World</p></a>
+                <a href="#"><p class="psubject1">Ethics</p></a>
+                <a href="#"><p class="psubject1">Data Structures and Algorithms</p></a>
+                <a href="#"><p class="psubject1">Object-Oriented Programming</p></a>
+                <a href="#"><p class="psubject1">Discrete Structures 2</p></a>
+                <a href="#"><p class="psubject1">Individual / Dual Sports</p></a>
+                <!--<a href="#"><p class="psubject1">National Service Training Program</p></a>-->
+              </div>
+            </div>
+      
+            <div class="mySlides2 fade">
+              <!--HIST 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Readings in Philippine History</h2>
+                <h3>HIST 1</h3>
+                  <p class = "psubject2">This course critically analyzes Philippine history from multiple perspectives through the lens of selected primary sources.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides2 fade">
+              <!--CW 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>The Contemporary World</h2>
+                <h3>CW 1</h3>
+                  <p class = "psubject2"> An ever-changing mix of social and political changes. While religious, political, and ethnic conflicts continue, we are currently living in one of the most peaceful eras in the history of the planet.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides2 fade">
+              <!--Ethics-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Ethics </h2>
+                <h3>Ethics</h3>
+                  <p class = "psubject2">A philosophical discipline that understands and analyzes issues of good, bad, right, wrong, just, and unjust.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides2 fade">
+              <!--ITE 6-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Data Structures and Algorithms</h2>
+                <h3>ITE 6</h3>
+                  <p class = "psubject2">Applies mathematical principles to the study of natural phenomena, providing a foundation for understanding the physical world.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">ITE 5</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides2 fade">
+              <!--CS 2-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Object-Oriented Programming</h2>
+                <h3>CS 2</h3>
+                  <p class = "psubject2">A computer programming model that organizes software design around data, or objects, rather than functions and logic.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">ITE 5</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides2 fade">
+              <!--CS 3-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Discrete Structures 2 </h2>
+                <h3>CS 3 </h3>
+                  <p class = "psubject2">Focusing on the study of mathematical structures that are fundamentally discrete rather than continuous. </p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">CS 1</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides2 fade">
+              <!--PE 3-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Individual / Dual Sports</h2>
+                <h3>PE 3</h3>
+                  <p class = "psubject2">Focuses on teaching the skills, rules, and strategies associated with sports that can be played either individually or in pairs.</p>
+          
+                  <br>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">2</td>
+                      <td class="tdcur">2</td>
+                      <td class="tdcur">PE 1</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <!-- <div class="mySlides2 fade">
+              NSTP 2
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>National Service Training Program</h2>
+                <h3>NSTP 1</h3>
+                  <p class = "psubject2">Surveys key events, movements, and figures in Philippine history, fostering a deeper understanding of national identity and heritage.</p>
+          
+                  <br>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">NSTP 1</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>-->
+      
+            <!--
+            <a class="prev2" onclick="plusSlides2(-0)">❮</a>
+            <a class="next2" onclick="plusSlides2(1)">❯</a>
+            -->
+
+            <div style="text-align:center; margin-top: 40px;">
+              <span class="dot2" onclick="currentSlide2(1)"></span> 
+              <span class="dot2" onclick="currentSlide2(2)"></span> 
+              <span class="dot2" onclick="currentSlide2(3)"></span> 
+              <span class="dot2" onclick="currentSlide2(4)"></span> 
+              <span class="dot2" onclick="currentSlide2(5)"></span> 
+              <span class="dot2" onclick="currentSlide2(6)"></span> 
+              <span class="dot2" onclick="currentSlide2(7)"></span> 
+              <span class="dot2" onclick="currentSlide2(8)"></span>  
+            </div>
+      
+            <script src="../JAVASCRIPT FILES/Curri-SecYearFS.js"></script>
+          </div>
+          </div>
+
+        <!--SECOND YEAR-->
+        <!--SECOND SEM SUBJECT-->
+        <div class="slideshow-container">
+          <div id="secondsem-secondyear" style="display: none;">
+            <h1>2ND YEAR | SECOND SEMESTER</h1>
+      
+            <div class="mySlides3 fade"> 
+              <div class="container2" style="padding-bottom: 25px; padding-top: 10px;">
+                <a href="#"><p class="psubject1">Life and Works of National Hero Dr. Jose Rizal </p></a>
+                <a href="#"><p class="psubject1">Statistics with Computer Applications</p></a>
+                <a href="#"><p class="psubject1">Application Development and Emerging Technologies </p></a>
+                <a href="#"><p class="psubject1">Information Management</p></a>
+                <a href="#"><p class="psubject1">Algorithms and Complexity</p></a>
+                <a href="#"><p class="psubject1">Web Development</p></a>
+                <a href="#"><p class="psubject1">Team Sports/Games</p></a>
+                <!-- <a href="#"><p class="psubject1">National Service Training Program</p></a> -->
+              </div>
+            </div>
+      
+            <div class="mySlides3 fade">
+              <!--RIZAL 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Life and Works of National Hero Dr. Jose Rizal</h2>
+                <h3>RIZAL 1</h3>
+                  <p class = "psubject2">An academic subject focusing on the historical and socio-political contributions of Dr. Jose Rizal, the national hero of the Philippines. </p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides3 fade">
+              <!--Elective 3-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Statistics with Computer Applications</h2>
+                <h3>Elective 3</h3>
+                  <p class = "psubject2">Combines the principles of statistical analysis with practical computer-based techniques.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides3 fade">
+              <!--ITE 7-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Application Development and Emerging Technologies</h2>
+                <h3>ITE 7</h3>
+                  <p class = "psubject2">Equip students with both the technical skills to create applications across various platforms and the insight to leverage new technologies for innovative solutions.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">ITE 5</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>  
+      
+            <div class="mySlides3 fade">
+              <!--ITE 8-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Information Management</h2>
+                <h3>ITE 8</h3>
+                  <p class = "psubject2">the systematic process of collecting, storing, organizing, retrieving, and managing information assets within an organization to support its operations, decision-making processes, and strategic objectives.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">ITE 6<br>CS 2</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides3 fade">
+              <!--CS 4-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Algorithms and Complexity</h2>
+                <h3>CS 4</h3>
+                  <p class = "psubject2">Typically covers the study of algorithms, their design, analysis, and optimization, along with an examination of their computational complexity.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides3 fade">
+              <!--CS 4-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Web Development</h2>
+                <h3>CS 4</h3>
+                  <p class = "psubject2">Refers to the process of creating and maintaining websites or web applications.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">ITE 4</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides3 fade">
+              <!--PE 4-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Team Sports/Games</h2>
+                <h3>PE 4</h3>
+                  <p class = "psubject2">The study of various team-based sports, focusing on the rules, strategies, techniques, and tactics involved in playing and coaching these games.</p>
+          
+                  <br>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">2</td>
+                      <td class="tdcur">2</td>
+                      <td class="tdcur">PE 1</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <!-- <div class="mySlides3 fade">
+              NSTP 2
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>National Service Training Program</h2>
+                <h3>NSTP 1</h3>
+                  <p class = "psubject2">Surveys key events, movements, and figures in Philippine history, fostering a deeper understanding of national identity and heritage.</p>
+          
+                  <br>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">NSTP 1</td>
+                    </tr>
+                  </table>
+              </div>
+            </div> -->
+      
+            <!--
+            <a class="prev3" onclick="plusSlides3(-0)">❮</a>
+            <a class="next3" onclick="plusSlides3(1)">❯</a>
+            -->
+
+            <div style="text-align:center; margin-top: 40px;">
+              <span class="dot3" onclick="currentSlide3(1)"></span> 
+              <span class="dot3" onclick="currentSlide3(2)"></span> 
+              <span class="dot3" onclick="currentSlide3(3)"></span> 
+              <span class="dot3" onclick="currentSlide3(4)"></span> 
+              <span class="dot3" onclick="currentSlide3(5)"></span> 
+              <span class="dot3" onclick="currentSlide3(6)"></span> 
+              <span class="dot3" onclick="currentSlide3(7)"></span> 
+              <span class="dot3" onclick="currentSlide3(8)"></span>  
+            </div>
+
+            <script src="../JAVASCRIPT FILES/Curri-SecYearSS.js"></script>
+          </div>
+          </div>
+
+        <!--THIRD YEAR YEAR-->
+        <!--FIRST SEM SUBJECT-->
+        <div class="slideshow-container">
+          <div id="firstsem-thirdyear" style="display: none;">
+            <h1>3RD YEAR | FIRST SEMESTER</h1>
+      
+            <div class="mySlides4 fade"> 
+              <div class="container2" style="padding-bottom: 25px; padding-top: 10px;">
+                <a href="#"><p class="psubject1">CS Elective 1</p></a>
+                <a href="#"><p class="psubject1">Advanced Web Programming</p></a>
+                <a href="#"><p class="psubject1">System Analysis and Design</p></a>
+                <a href="#"><p class="psubject1">Architecture and Organization</p></a>
+                <a href="#"><p class="psubject1">Automata Theory and Formal Languages</p></a>
+                <a href="#"><p class="psubject1">Information Assurance and Security</p></a>
+                <!-- <a href="#"><p class="psubject1">Rhythmic Activities</p></a>
+                <a href="#"><p class="psubject1">National Service Training Program</p></a> -->
+              </div>
+            </div>
+      
+            <div class="mySlides4 fade">
+              <!--CS ELEC 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>CS Elective 1</h2>
+                <h3>CS ELEC 1</h3>
+                  <p class = "psubject2">Refers to a computer science elective course that offers students the opportunity to delve deeper into a specific area of interest within the field of computer science.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides4 fade">
+              <!--CS 6-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Advanced Web Programming</h2>
+                <h3>CS 6</h3>
+                  <p class = "psubject2">Course that builds upon foundational web development skills, covering more advanced topics and techniques used in creating dynamic and interactive web applications.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">CS 5</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides4 fade">
+              <!--CS 7-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>System Analysis and Design</h2>
+                <h3>CS 7</h3>
+                  <p class = "psubject2">Study of methodologies and techniques used to analyze, design, and develop computer-based information systems. </p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">CS 5</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides4 fade">
+              <!--CS 8-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Architecture and Organization</h2>
+                <h3>CS 8</h3>
+                  <p class = "psubject2">The context of computer science typically explores the fundamental principles and concepts underlying computer architecture and organization.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">ITE 3</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides4 fade">
+              <!--CS 9-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Automata Theory and Formal Languages</h2>
+                <h3>ITE 5</h3>
+                  <p class = "psubject2">Builds upon programming fundamentals, focusing on advanced algorithms, data structures, and software development methodologies.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">ITE 4</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides4 fade">
+              <!--CS 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Information Assurance and Security</h2>
+                <h3>CS 10</h3>
+                  <p class = "psubject2">Information Assurance and Security focuses on safeguarding digital assets, mitigating cybersecurity threats, and implementing measures to ensure the confidentiality, integrity, and availability of information systems.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <!--
+            <a class="prev4" onclick="plusSlides4(-0)">❮</a>
+            <a class="next4" onclick="plusSlides4(1)">❯</a>
+            -->
+
+            <div style="text-align:center; margin-top: 40px;">
+              <span class="dot4" onclick="currentSlide4(1)"></span> 
+              <span class="dot4" onclick="currentSlide4(2)"></span> 
+              <span class="dot4" onclick="currentSlide4(3)"></span> 
+              <span class="dot4" onclick="currentSlide4(4)"></span> 
+              <span class="dot4" onclick="currentSlide4(5)"></span> 
+              <span class="dot4" onclick="currentSlide4(6)"></span> 
+              <span class="dot4" onclick="currentSlide4(7)"></span> 
+            </div>
+      
+            <script src="../JAVASCRIPT FILES/Curri-ThirdYearFS.js"></script>
+          </div>
+          </div>
+
+        <!--THIRD YEAR YEAR-->
+        <!--SECOND SEM SUBJECT-->
+        <div class="slideshow-container">
+          <div id="secondsem-thirdyear" style="display: none;">
+            <h1>3RD YEAR | SECOND SEMESTER</h1>
+      
+            <div class="mySlides5 fade"> 
+              <div class="container2" style="padding-bottom: 25px; padding-top: 10px;">
+                <a href="#"><p class="psubject1">CS Thesis Writing 1</p></a>
+                <a href="#"><p class="psubject1">CS Elective 2</p></a>
+                <a href="#"><p class="psubject1">Programming Languages</p></a>
+                <a href="#"><p class="psubject1">Software Engineering</p></a>
+                <a href="#"><p class="psubject1">Social Issues and Professional Practice</p></a>
+              </div>
+            </div>
+      
+            <div class="mySlides5 fade">
+              <!--STS-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>CS Thesis Writing 1</h2>
+                <h3>CS Thesis 1</h3>
+                  <p class = "psubject2">Equip students with essential research methodologies and academic writing skills to develop a robust foundation for crafting and executing their computer science thesis projects.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3rd Yr Standing</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides5 fade">
+              <!--HUM 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>CS Elective 2</h2>
+                <h3>CS ELEC 2</h3>
+                  <p class = "psubject2">CS Elective 3 explores advanced topics in computer science, providing students with specialized knowledge and skills in areas such as artificial intelligence, cybersecurity, or data science</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub></td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides5 fade">
+              <!--ELECTIVE 2-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Programming Languages</h2>
+                <h3>CS 11</h3>
+                  <p class = "psubject2">Programming Languages delves into the theory and practical application of various programming paradigms, fostering a deep understanding of language design, syntax, semantics, and implementation.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub></td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">CS 5</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides5 fade">
+              <!--MATH ELEC 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Software Engineering</h2>
+                <h3>CS 12</h3>
+                  <p class = "psubject2">Software Engineering equips students with the methodologies, tools, and principles necessary to develop high-quality software systems efficiently, emphasizing software lifecycle management, design patterns, testing, and project management techniques.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub></td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">CS 6, CS 7</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides5 fade">
+              <!--ITE 5-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Social Issues and Professional Practice</h2>
+                <h3>CS 13</h3>
+                  <p class = "psubject2">Social Issues and Professional Practice examines the ethical, societal, and legal implications of technology, while also preparing students with the professional skills and ethical frameworks necessary for successful careers in computing.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <!--
+            <a class="prev5" onclick="plusSlides5(-0)">❮</a>
+            <a class="next5" onclick="plusSlides5(1)">❯</a>
+            -->
+
+            <div style="text-align:center; margin-top: 40px;">
+              <span class="dot5" onclick="currentSlide5(1)"></span> 
+              <span class="dot5" onclick="currentSlide5(2)"></span> 
+              <span class="dot5" onclick="currentSlide5(3)"></span> 
+              <span class="dot5" onclick="currentSlide5(4)"></span> 
+              <span class="dot5" onclick="currentSlide5(5)"></span>
+              <span class="dot5" onclick="currentSlide5(6)"></span>   
+            </div>
+      
+            <script src="../JAVASCRIPT FILES/Curri-ThirdYearSS.js"></script>
+          </div>
+          </div>
+
+        <!--FOURTH YEAR YEAR-->
+        <!--FIRST SEM SUBJECT-->
+        <div class="slideshow-container">
+          <div id="firstsem-fourthyear" style="display: none;">
+            <h1>4TH YEAR | FIRST SEMESTER</h1>
+      
+            <div class="mySlides6 fade"> 
+              <div class="container2" style="padding-bottom: 25px; padding-top: 10px;">
+                <a href="#"><p class="psubject1">CS Thesis Writing 2</p></a>
+                <a href="#"><p class="psubject1">CS Elective 3</p></a>
+                <a href="#"><p class="psubject1">Human Computer Interaction</p></a>
+                <a href="#"><p class="psubject1">Operating Systems</p></a>
+                <a href="#"><p class="psubject1">Networks and Communications</p></a>
+              </div>
+            </div>
+      
+            <div class="mySlides6 fade">
+              <!--STS-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>CS Thesis Writing 2</h2>
+                <h3>CS Thesis 2</h3>
+                  <p class = "psubject2">Master the principles and methodologies of academic research to produce a comprehensive and original computer science thesis.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">CS Thesis 1</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides6 fade">
+              <!--HUM 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>CS Elective 3</h2>
+                <h3>CS ELEC 3</h3>
+                  <p class = "psubject2">Explore advanced topics in computer science through specialized coursework tailored to individual interests and career goals.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub></td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides6 fade">
+              <!--ELECTIVE 2-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Human Computer Interaction</h2>
+                <h3>CS 14</h3>
+                  <p class = "psubject2">Investigate the design, evaluation, and implementation of interactive computing systems, focusing on enhancing user experience and usability.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur"></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides6 fade">
+              <!--MATH ELEC 1-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Operating Systems</h2>
+                <h3>CS 15</h3>
+                  <p class = "psubject2">Delve into the fundamental concepts and mechanisms underlying modern operating systems, including process management, memory allocation, and file systems.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub></td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">CS 8</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <div class="mySlides6 fade">
+              <!--ITE 5-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Networks and Communications</h2>
+                <h3>CS 16</h3>
+                  <p class = "psubject2">Study the principles, protocols, and technologies that facilitate communication and data exchange across computer networks, from local area to global scale.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"><sup>2</sup> / <sub>3</sub> </td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">CS 8</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <!--
+            <a class="prev6" onclick="plusSlides6(-0)">❮</a>
+            <a class="next6" onclick="plusSlides6(1)">❯</a>
+            -->
+
+            <div style="text-align:center; margin-top: 40px;">
+              <span class="dot6" onclick="currentSlide6(1)"></span> 
+              <span class="dot6" onclick="currentSlide6(2)"></span> 
+              <span class="dot6" onclick="currentSlide6(3)"></span> 
+              <span class="dot6" onclick="currentSlide6(4)"></span> 
+              <span class="dot6" onclick="currentSlide6(5)"></span> 
+              <span class="dot6" onclick="currentSlide6(6)"></span> 
+            </div>
+
+            <script src="../JAVASCRIPT FILES/Curri-FourYearFS.js"></script>
+          </div>
+          </div>
+
+        <!--FOURTH YEAR YEAR-->
+        <!--SECOND SEM SUBJECT-->
+        <div class="slideshow-container">
+          <div id="secondsem-fourthyear" style="display: none;">
+            <h1>4TH YEAR | SECOND SEMESTER</h1>
+      
+            <div class="mySlides7 fade"> 
+              <div class="container2" style="padding-bottom: 25px; padding-top: 10px;">
+                <a href="#"><p class="psubject1">Practicum (300 hours)</p></a>
+              </div>
+            </div>
+      
+            <div class="mySlides7 fade">
+              <!--STS-->
+              <div class="container2" style="padding-bottom: 20px;">
+                <h2>Practicum (300 hours)</h2>
+                <h3>CS 17</h3>
+                  <p class = "psubject2"> Gain hands-on experience and practical skills through a supervised internship or project-based learning, applying theoretical knowledge in real-world settings.</p>
+          
+                  <table class="tablecur">
+                    <tr>
+                      <th class="thcur">Hours / <br>Work</th>
+                      <th class="thcur">Number of <br>Units</th>
+                      <th class="thcur">Prerequisite / <br>Corequisite</th>
+                    </tr>
+                            
+                    <tr>
+                      <td class="tdcur"></td>
+                      <td class="tdcur">3</td>
+                      <td class="tdcur">4th Yr Standing</td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+      
+            <!--
+            <a class="prev7" onclick="plusSlides7(-0)">❮</a>
+            <a class="next7" onclick="plusSlides7(1)">❯</a>
+            -->
+
+            <div style="text-align:center; margin-top: 40px;">
+              <span class="dot7" onclick="currentSlide7(1)"></span>
+              <span class="dot7" onclick="currentSlide7(2)"></span> 
+            </div>
+      
+            <script src="../JAVASCRIPT FILES/Curri-FourYearSS.js"></script>
+          </div>
+          </div>
+
+      </div>
+        </section>
+      </main>
+</body>
+</html>

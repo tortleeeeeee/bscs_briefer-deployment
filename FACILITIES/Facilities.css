@@ -1,0 +1,363 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    margin-top: 0%;
+}
+section img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container .comlab_btn{
+    font-family: "Istok Web", sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 2%;
+    right: 15%;
+    background-color: #180466;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+}
+.container .comlab_btn:hover {
+    background-color: #DAF4FF;
+    color: black;
+  }
+.container .GMD_btn{
+    font-family: "Istok Web", sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 2%;
+    right: 8%;
+    background-color: #180466;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+}
+.container .GMD_btn:hover {
+    background-color: #DAF4FF;
+    color: black;
+  }
+.container .text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 350%;
+    font-weight: 900;
+    -webkit-text-stroke: 5px #180466;
+    -webkit-text-fill-color: white;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+
+
+.container2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.container2 #box1 {
+    width:90%;
+    height:auto;
+    background-color:#DAF4FF;
+    border:4px ridge #180466;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+.text1{
+    font-family: "Oswald", sans-serif;
+    padding: 20px;
+    font-size: 500%;
+    font-weight: 900;
+    /*-webkit-text-stroke: 7px #180466;*/
+    -webkit-text-fill-color: #180466;
+    color:#180466;
+    position: absolute;
+    margin-top: 0%;
+    align-items: center;
+}
+
+.facilitiesgallery{
+    margin-top: 10%;
+    width: 80%;
+    height: 80vh;
+    max-width: 1600px;
+    max-height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform .5s;
+    align-items: center;
+}
+.gallery-image:hover {
+    transform: scale(1.025);
+}
+
+.gallery-image{
+    width: 30%;
+    height: calc(50% - 20px);
+    min-width: 300px;
+    min-height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px #333;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.facilitiesimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    display: flex;
+}
+.gmdimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    display: flex;
+}
+
+/* popup */
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 70%;
+    max-width: 1600px;
+    height: 80vh;
+    max-height: 800px;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.popup.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    
+}
+.popup.active .close-btn,
+.popup.active .image-name,
+.popup.active .index,
+.popup.active .large-image,
+.popup.active .arrow-btn{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: .3s;
+}
+
+/*gmd*/
+.gmd-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 70%;
+    max-width: 1600px;
+    height: 80vh;
+    max-height: 800px;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gmd-popup.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+.gmd-popup.active .gmd-close-btn,
+.gmd-popup.active .image-name,
+.gmd-popup.active .index,
+.gmd-popup.active .large-image,
+.gmd-popup.active .arrow-btn{
+    opacity: 3;
+    transition: opacity .5s;
+    transition-delay: .3s;
+}
+
+/*hanggang dine*/
+.top-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    color:white;
+    background: #1308a7;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.image-name{
+    opacity: 0;
+    text-align: center;
+}
+
+.close-btn{
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f00;
+    cursor: pointer;
+}
+
+.arrow-btn{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.left-arrow{
+    left: 10px;
+}
+
+.right-arrow{
+    right: 10px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.arrow-btn:hover{
+    background: rgba(52, 21, 254, 0.5);
+}
+.index{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.4);
+}
+.gmd-index{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.4);
+   
+}
+
+.large-image{
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+   
+}
+.gmd-large-image{
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    display: flex; 
+}
+
+.container3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.container3 #box2 {
+    width:90%;
+    height:auto;
+    background-color:#DAF4FF;
+    border:4px ridge #180466;
+    display: flex;
+    justify-content: center;
+}
+.upbtn{
+    position:absolute;
+    margin-top:50%;
+    right: 90px;
+    width: 5%;
+    height: auto;
+    z-index: 1;
+
+}
+.gmd-close-btn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f00;
+    cursor: pointer;
+    
+}
+.gmd-arrow-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.gmd-left-arrow{
+    left: 10px;
+}
+
+.gmd-right-arrow{
+    right: 10px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.gmd-arrow-btn:hover{
+    background: rgba(52, 21, 254, 0.5);
+}
+.blur-background {
+    filter: blur(5px); 
+}

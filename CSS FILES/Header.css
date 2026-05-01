@@ -1,0 +1,55 @@
+@media only screen and (min-width: 768px) {
+
+html, body{
+    width: 100%;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    background-color:#60A3D9;
+    position: sticky;
+    top:0px;
+    z-index: 9999;
+}
+
+.image{
+    width: 50;
+    height: 60px;
+    margin-top: 5px;
+}
+.image2{
+    width: 55;
+    height: 60px;
+    margin-top: 5px;
+}
+table{ 
+    background-color:#60A3D9;
+    padding: 0%;
+    margin:0%;
+}
+
+.title{
+    font-family:'Georgia';
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 3%;
+    padding-left: 10px;
+    padding-bottom: 0%;
+    margin: 0%;
+    text-align: left;
+    color: yellow;
+}
+.title2{
+    font-family:'Garamond';
+    font-size: 15px;
+    padding-bottom: 3%;
+    padding-left: 10px;
+    margin: 0%;
+    text-align: left;
+    color: aliceblue;
+}
+
+    
+}

@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px) {
+.historySection{
+    background-image: url("../Images/History\ Imgs/cosbldg.JPG");
+    background-size: cover;
+    position:relative;
+    top:0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    opacity: 1;
+    animation-duration: 4s;
+    animation-delay:2s;
+    animation-name: main;
+    animation-fill-mode: forwards; 
+}
+
+/*
+@keyframes main{
+    0% {opacity: 1;}
+    100% {opacity: .6;}
+}*/
+
+.history {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    margin: 5%;
+    margin-right: 10%;
+    color: #071f32;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: mytextmove;
+    opacity: 0;  
+    padding-bottom: 5%;
+}
+
+@keyframes mytextmove {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Faculty.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Navigation.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS FILES/Scrollbar.css'>
+    
+    <title>BSCS Briefer | Officers </title>
+
+    <style>
+      .container1 {
+        width: 80%;
+        height: 70vh;
+        position: relative;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 30), 0 3px 16px rgba(10, 0, 0, 403);
+        z-index: 1;
+        margin-left: 70px;
+        padding-left: 7%;
+        background-image:linear-gradient( rgba(1, 13, 70, 1), rgba(1, 13, 70, .8));
+        padding-top: 5%;
+      }
+
+      .container1:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    </style>
+</head>
+<body>
+
+    <!--HEADING-->
+    <div class="header">
+        <table>
+          <tr>
+            <td rowspan="2" style="border-right: 3px solid #304673; padding-right: 10px;">
+              <img class="image" src = "../IMAGES/Header Images/urs.png"/> 
+              <img class = "image2" src = "../IMAGES/Header Images/ursgiants.png"/> 
+              <img class ="image2"src = "../IMAGES/Header Images/TIPA.png"/>
+          </td>
+            <td class="title"> UNIVERSITY OF RIZAL SYSTEM MORONG CAMPUS</td>
+          </tr>
+          <tr>
+            <td class="title2">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</td>
+          </tr>
+        </table>
+      </div>
+
+    <!--NAVIGATION BAR-->
+    <div class="sidebar" style="font-family: Garamond;">
+        
+      <div class="logo_details">
+        <!--<i class="bx bxl-audible icon"></i>
+        <div class="logo_name">Code</div>-->
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        
+        <li>
+              <a href="../html-files/news-events.html">
+                <i><img src="../IMAGES/Navigation Images/News&Events.png" style="width:35px; height:auto;" alt=""></i>
+                <span class="link_name">News&Events</span>
+              </a>
+              <span class="tooltip">News&Events</span>
+            </li>
+        <li>
+          <a href="../html-files/Faculty.html">
+            <i><img src="../IMAGES/Navigation Images/Faculty.PNG" style="width:35px; height:auto;" alt=""></i>
+            <span class="link_name">Faculty</span>
+          </a>
+          <span class="tooltip">Faculty</span>
+        </li>
+        <li>
+          <a href="../html-files/Curriculum.html">
+            <i><img src="../IMAGES/Navigation Images/Curriculum.PNG" style="width:35px; height:auto;" alt=""></i>
+            <span class="link_name">Curriculum</span>
+          </a>
+          <span class="tooltip">Curriculum</span>
+        </li>
+        <li>
+          <a href="../FACILITIES/Facilities.html">
+            <i><img src="../IMAGES/Navigation Images/Facilities.PNG" style="width:35px; height:auto;" alt=""></i>
+            <span class="link_name">Facilities</span>
+          </a>
+          <span class="tooltip">Facilities</span>
+        </li>
+        <li>
+          <a href="../html-files/Officers.html">
+            <i><img src="../IMAGES/Navigation Images/Organization.PNG"/ style="width:35px; height:auto;" alt=""></i>
+            <span class="link_name">Organization</span>
+          </a>
+          <span class="tooltip">Organization</span>
+        </li>
+      </ul>
+    </div>
+
+      <!-- Scripts -->
+      <script src="../JAVASCRIPT FILES/Navigation.js"></script>
+
+      <main>
+        <section id="faculty">
+            <div class="wrapper">
+                <h1><hr style="color: white;"></hr>BSCS ORGANIZATIONAL STRUCTURE</h1>
+                <h2>College of Science
+                    <hr style="color: white;"></hr>
+                </h2>
+                </h2>
+                </div>
+                
+                <div id="initialLayout-faculty" >
+                <div class="adviser" id="f1" onclick="change0()">
+                    <div class="officers_member" onclick="changeDetails0()">
+                    <button onclick="movePicturefaculty()">
+    
+                        <div class="officers_img">
+                            <img src="../IMAGES/Faculty Images/COS Dean.png" alt="officers_member_image" id="im0">
+                        </div>
+                        <h3 style="font-size: 20px;" id="name0">Dr. Jose E. Binaluyo Jr.</h3>
+                        <p class="role">DEAN</p>
+                    </button>
+                    </div>
+                </div>  
+                <div class="officers1" id="f2" onclick="change1()">
+                    <div class="officers_member" onclick="changeDetails1()">
+                    <button onclick="movePicturefaculty()">
+                        <div class="officers_img">
+                            <img src="../IMAGES/Faculty Images/Computer Science.png" alt="officers_member_image" id="im1">
+                        </div>
+                        <h3 style="font-size: 20px;" id="name1">Michael B. Francisco</h3>
+                        <p class="role">Program head</p>
+                    </button>
+                    </div>
+                </div>
+                <div class="officers2" id="f3">
+                  <div onclick="change2()">
+                    <button onclick="movePicturefaculty()"><div class="officers_member" onclick="changeDetails2()">
+                      <div class="officers_img">
+                          <img src="../IMAGES/Faculty Images/Prof. Maria Cecilia.png" alt="officers_member_image" id="im2">
+                      </div>
+                      <h3 style="font-size: 20px;" id="name2">Maria Cecilia P. San Jose</h3>
+                      <p class="role">Professor</p>
+                  </div></button>
+                  </div>
+                  <div onclick="change3()">
+                    <button onclick="movePicturefaculty()"><div class="officers_member" onclick="changeDetails3()">
+                      <div class="officers_img">
+                          <img src="../IMAGES/Faculty Images/Prof. Yvette.png" alt="officers_member_image" id="im3">
+                      </div>
+                      <h3 style="font-size: 20px;" id="name3">Yvette S. Garrovillas</h3>
+                      <p class="role">Professor</p>
+                  </div></button>
+                  </div>
+                </div>
+                <div class="officers3" id="f4">
+                  <div onclick="change4()">
+                    <button onclick="movePicturefaculty()"><div class="officers_member" onclick="changeDetails4()">
+                      <div class="officers_img">
+                          <img src="../IMAGES/Faculty Images/Prof. Lindy.png" alt="officers_member_image" id="im4">
+                      </div>
+                      <h3 style="font-size: 20px;" id="name4">Lindy A. Alejandro</h3>
+                      <p class="role">Professor</p>
+                  </div></button>
+                  </div>
+                  <div onclick="change5()">
+                    <button onclick="movePicturefaculty()"><div class="officers_member" onclick="changeDetails5()">
+                      <div class="officers_img">
+                          <img src="../IMAGES/Faculty Images/Prof. John.png" alt="officers_member_image" id="im5">
+                      </div>
+                      <h3 style="font-size: 20px;" id="name5">John Emmanuel SJ. Dela Cruz</h3>
+                      <p class="role">Professor</p>
+                  </div></button>
+                  </div>
+                </div>
+        </section>
+    
+        <section id="deets-faculty" style="display:none; padding-top: 2%; height: auto;">
+          <div class="container1">
+            <div class="button-x" onclick="exitfaculty()">
+              <button id="x-faculty" style="font-size:20px; font-style: normal; width: 35px; background-color: #000000; border-color:#ffffff; color: #f9fafd;display:none;"> x </button>
+          </div>
+        
+          <div style="position: sticky; top: 5%;">
+            <div class = "img-faculty">
+              <img id="photo" src = "../IMAGES/Faculty Images/COS Dean.png" alt="Dean" width="200" height="250" class="img" style="float:left; margin-right: 10px;"> 
+            </div>
+          </div>
+          <div style="position: sticky; top: 28%;">
+            <div class = "text" style="margin-top: 20%;">
+                <h1 id="position" style="color: #ffcc25; font-size: 80%; font-family: Arial, Helvetica, sans-serif; text-align:right; margin-right:10%;"> <b>COLLEGE DEAN</b> </h1>
+                <h1 id="name">Dr. Jose E. Binaluyo Jr.</h1>
+            </div>
+          </div>
+           
+          <div style="background-color:transparent; overflow: scroll; position: relative; float: left; height: 55%; margin-top:2%; padding-top: 1%;">
+          <br><br>
+          <div class = "education">
+            <h1>E D U C A T I O N :</h1>
+        </div>
+    
+        <div class = "educ_content">
+            <p id="education">University of Rizal System, Bachelor of Science in Computer Science (2021-Present) <br>
+                University of Rizal System, Bachelor of Law (0000)<br>
+                University of Rizal System, Master of Laws (0000)</p>
+        </div>
+        <div class = "education">
+            <h1>P R O F I L E :</h1>
+        </div>
+    
+        <div class = "educ_content">
+            <p id="more_details">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+          </div>  
+        </div>
+        </section>
+      </main>
+    
+
+<script src="../JAVASCRIPT FILES/Faculty.js">
+    /*var afaculty=1;
+    function movePicturefaculty(){
+        
+        if (afaculty==1) {
+            document.getElementById("f1").setAttribute("class", "ref-faculty");
+            document.getElementById("f2").setAttribute("class", "ref-faculty");
+            document.getElementById("f3").setAttribute("class", "ref-faculty");
+            document.getElementById("f4").setAttribute("class", "ref-faculty");
+            document.getElementById("f5").setAttribute("class", "ref-faculty");
+            document.getElementById("f6").setAttribute("class", "ref-faculty");
+            document.getElementById("f7").setAttribute("class", "ref-faculty");
+            document.getElementById("f8").setAttribute("class", "ref-faculty");
+            document.getElementById("initialLayout-faculty").setAttribute("class", "newLayout-faculty");
+            document.getElementById("deets-faculty").setAttribute("class", "rightpanel-faculty");
+            document.getElementById("deets-faculty").style.display="inline";
+            document.getElementById("x-faculty").style.display="inline";
+            return afaculty=0;
+        }
+    } 
+
+    function exitfaculty(){
+
+        if (afaculty==0) {
+            document.getElementById("f1").setAttribute("class", "adviser");
+            document.getElementById("f2").setAttribute("class", "officers1");
+            document.getElementById("f3").setAttribute("class", "officers2");
+            document.getElementById("f4").setAttribute("class", "officers3");
+            document.getElementById("f5").setAttribute("class", "officers4");
+            document.getElementById("f6").setAttribute("class", "officers5");
+            document.getElementById("f7").setAttribute("class", "officers6");
+            document.getElementById("f8").setAttribute("class", "officers7");
+            document.getElementById("initialLayout-faculty").setAttribute("class", "initialLayout-faculty");
+            document.getElementById("deets-faculty").removeAttribute("class", "rightpanel-faculty");
+            document.getElementById("deets-faculty").style.display="none";
+            document.getElementById("x-faculty").style.display="none"
+            return afaculty=1;
+        }
+    }*/
+</script>  
+</body>
+</html>
